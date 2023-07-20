@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/AddTeacherAcount"
+        android:title="ADD TEACHER ACCOUNT"></item>
+
+    <item
+        android:id="@+id/AddStudentAcount"
+        android:title="ADD STUDENT ACCOUNT"></item>
+
+    <item
+        android:id="@+id/DeleteAccount"
+        android:title="DELETE ACCOUNT"></item>
+</menu>

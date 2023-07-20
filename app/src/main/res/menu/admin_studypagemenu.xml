@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="ADD STUDENT INTO CLASS"
+        android:id="@+id/AddStudentInClass"></item>
+
+    <item android:title="DELETE STUDENT OUT OF CLASS"
+        android:id="@+id/DeleteStudentOutClass"></item>
+
+    <item android:title="UPDATE SCORES"
+        android:id="@+id/InsertScores"></item>
+
+
+</menu>

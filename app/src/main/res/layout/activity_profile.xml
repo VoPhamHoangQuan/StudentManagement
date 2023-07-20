@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".View.Login_ForgetPass.Student.Profile">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header_background"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Subject"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:text="PROFILE"
+            android:textColor="@color/colorBackground"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ImgGoBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_undo"
+            app:layout_constraintBottom_toBottomOf="@id/Subject"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/Subject"
+            app:tint="@color/colorBackground" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_rectangle_background"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="ID"
+            android:textColor="#605E5E"
+            android:textSize="16sp" />
+
+        <EditText
+
+            android:id="@+id/id_student"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingRight="44.3dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="6.3dp"
+            android:layout_marginRight="44.3dp"
+            android:layout_marginBottom="5dp"
+            android:background="#d5d5d5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="NAME"
+            android:textColor="#605E5E"
+            android:textSize="16sp" />
+
+        <EditText
+
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:paddingRight="44.3dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="6.3dp"
+            android:layout_marginRight="44.3dp"
+            android:layout_marginBottom="5dp"
+            android:background="#d5d5d5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="GENDER"
+            android:textColor="#605E5E"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            app:backgroundTint="@color/btn_login">
+
+            <RadioButton
+                android:id="@+id/rdbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#03A9F4"
+                android:checked="true"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rdbFemal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#E91E63"
+                android:checked="false"
+                android:text="Female" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="6.3dp"
+            android:layout_marginRight="44.3dp"
+            android:layout_marginBottom="5dp"
+            android:background="#d5d5d5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="BIRTHDATE"
+            android:textColor="#605E5E"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_baseline_arrow"
+            android:onClick="openDatePicker"
+            android:text="01/01/2021"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/btn_login" />
+
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="6.3dp"
+            android:layout_marginRight="44.3dp"
+            android:layout_marginBottom="5dp"
+            android:background="#d5d5d5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="PHONE"
+            android:textColor="#605E5E"
+            android:textSize="16sp" />
+
+        <EditText
+
+            android:id="@+id/Phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingRight="44.3dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="6.3dp"
+            android:layout_marginRight="44.3dp"
+            android:layout_marginBottom="5dp"
+            android:background="#d5d5d5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_regular"
+            android:text="ADDRESS"
+            android:textColor="#605E5E"
+            android:textSize="16sp" />
+
+        <EditText
+
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:maxLength="100"
+            android:maxLines="1"
+            android:paddingRight="44.3dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="6.3dp"
+            android:layout_marginRight="44.3dp"
+            android:layout_marginBottom="5dp"
+            android:background="#d5d5d5" />
+
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/btnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginBottom="104dp"
+        android:text="Edit"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/btn_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</LinearLayout>
